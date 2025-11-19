@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парк "ЛистОк"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li class="burger-li"><a href="#" class="menu-item">Главная</a></li>
+                <li class="burger-li"><a href="#about" class="menu-item">О проекте</a></li>
+                <li class="burger-li"><a href="#arts" class="menu-item">Концепт-арты</a></li>
+                <li class="burger-li"><a href="#team" class="menu-item">Команда</a></li>
+                <li class="burger-li"><a href="#faq" class="menu-item">F. A. Q.</a></li>
+                <li class="burger-li"><a href="#feedback" class="menu-item">Задать нам вопрос</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="./index.html"><img src="images/logo.png" alt="logo" class="logo_png"></a>
+            <a href="./index.html" class="logo_text">Парк ЛистОк</a>
+        </div>
+    </header>
+
+    <main>
+        <button class="back-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+        <article class="start">
+            <video class="backgr_video" autoplay muted preload="auto" loop>
+                <source src="images/background.mp4">
+            </video>
+            <div class="start_vid">
+                <video class="logo_vid" autoplay muted preload="auto" loop>
+                    <source src="images/logo_vid.mp4">
+                </video>
+            </div>
+            <div class="start_info">
+                <div class="start_text">
+                    <h1>Парк-проект "ЛистОк"</h1>
+                    <p>📌 Улица Генкеля, 8, Пермь, территория за корпусом
+                        №8</p>
+                    <h2>Будь в курсе анонсов и новостей <br> в наших социальных сетях!</h2>
+                </div>
+                <div class="start_qr">
+                    <figure>
+                        <a href="https://t.me/PGNIYPARK" target="_blank">
+                            <img src="images/qr_tg.png" alt="qr_tg" class="qr">
+                        </a>
+                        <figcaption>Парк "ЛистОк" ПГНИУ в Telegram</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://vk.ru/club233182019" target="_blank">
+                            <img src="images/gr_vk.png" alt="qr_vk" class="qr">
+                        </a>
+                        <figcaption>Парк "ЛистОк" ПГНИУ в VK</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </article>
+
+        <article class="about" id="about">
+            <h2>О чём наш проект? 🤔</h2>
+            <div class="article_text">
+                <ul>
+                    <li class="advantages">Наш проект - <b>круглогодичный парк</b>, который будет удовлетворять
+                        потребности
+                        нашей целевой аудитории парка - студентов и не только.</li>
+                    <li class="advantages">Наш проект посвящен благоустройству территории кампуса.<br>Мы стремимся дать
+                        возможность студентам и
+                        работникам вуза для отдыха от повседневной учебной суеты, для созерцания красоты и для
+                        возможности
+                        приятно провести время на свежем воздухе, вдали от основных потоков людей, спешащих на
+                        учёбу/работу
+                        в
+                        пределах кампуса. Это в свою очередь поспособствует развитию кампуса, создаст новые точки
+                        притяжения
+                        на
+                        его территории.</li>
+                    <!-- <li class="advantages"></li> -->
+                </ul>
+            </div>
+        </article>
+
+        <article class="arts" id="arts">
+            <h2>Концепт-арты парка 🖼️</h2>
+            <div class="arts-art">
+                <img src="images/art1.png" alt="concept-art-1" class="concept_art">
+                <img src="images/art2.png" alt="concept-art-2" class="concept_art">
+            </div>
+
+        </article>
+
+        <article class="team" id="team">
+            <h2>Наша команда 👥</h2>
+            <div class="team_container">
+                <div class="main-role">
+                    <h3>Руководитель проекта 👑</h3>
+                    <figure>
+                        <img src="images/portrait.png" alt="portrait" class="portrait">
+                        <figcaption><b>Копытов Михаил</b> 🫅
+                            <p class="description">Руководитель проекта🫅</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="second-roles">
+                    <div class="role">
+                        <h3>Дизайнеры 🖌️</h3>
+                        <div class="members">
+                            <figure>
+                                <img src="images/portrait.png" alt="portrait" class="portrait">
+                                <figcaption><b>Лютиков Константин</b><br>
+                                    <p class="description">Зам. руководителя и дизайнер ✒️</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/portrait.png" alt="portrait" class="portrait">
+                                <figcaption><b>Макушин Артемий</b><br>
+                                    <p class="description">Веб-разработчик 💻</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/portrait.png" alt="portrait" class="portrait">
+                                <figcaption><b>Денисов Максим</b><br>
+                                    <p class="description">Разработчик макетов 🎴</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="role">
+                        <h3>SMM-специалисты 💬</h3>
+                        <div class="members">
+                            <figure>
+                                <img src="images/portrait.png" alt="portrait" class="portrait">
+                                <figcaption><b>Снигирев Кирилл</b><br>
+                                    <p class="description">SMM-руководитель 💬</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/portrait.png" alt="portrait" class="portrait">
+                                <figcaption><b>Бражников Степан</b><br>
+                                    <p class="description">Модератор чата ⚙️</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="faq" id="faq">
+            <h2>F. A. Q. 📝</h2>
+        </article>
+
+        <article class="feedback" id="feedback">
+            <h2>Задать нам вопрос 🙋‍♂️</h2>
+            <div class="container-feedback">
+
+                <div class="container-feedback-item">
+                    <figure>
+                        <a href="https://t.me/+xfvqCmklqf5mN2Qy" target="_blank">
+                            <img src="images/chat.jpg" class="chat" alt="Chat in Telegram">
+                        </a>
+                        <figcaption>Связь с нами в чате Телеграма!</figcaption>
+                    </figure>
+                </div>
+
+                <div class="container-feedback-item">
+                    <figure>
+                        <a href="https://forms.gle/zogSKRUiWLVRDrLo7" target="_blank">
+                            <img src="images/form.png" class="form" alt="Google Form">
+                        </a>
+
+                        <figcaption>Задайте свой вопрос в Google Forms!</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>@ All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
