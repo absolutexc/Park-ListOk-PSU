@@ -5,10 +5,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.title {
+  font-family: "Comfortaa", sans-serif;
+}
+
 body {
   background-color: blueviolet;
   margin: 0;
-  background-image: url('images/main_back.jpg');
+  background-image: url('images/main_back2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -248,6 +252,11 @@ article {
   border: 3px solid white;
 }
 
+.start a {
+  text-decoration: none;
+  color: #fff9f9;
+}
+
 .start h2 {
   margin-top: 3%;
   top: 0;
@@ -330,7 +339,6 @@ h1 {
   font-size: 75px;
   text-align: center;
   color: white;
-  /* -webkit-text-stroke: 2px black; */
   border: 3px solid white;
 }
 
@@ -374,9 +382,13 @@ h2 {
 }
 
 .article_text {
-  padding: 25px 10% 0 10%;
+  margin: 0 7vw 3vw 7vw;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
+  background: linear-gradient(to left, rgb(251, 183, 24) 33%, rgb(243, 130, 38) 52%, rgb(170, 246, 52) 99%);
+  border-radius: 10px;
+  padding: 20px;
+  border: 3px solid white;
 }
 
 /* arts */
@@ -427,8 +439,9 @@ h3 {
 .portrait {
   width: 200px;
   height: 200px;
-  box-shadow: 0 0 20px 5px gray;
+  box-shadow: 0 0 10px 5px rgb(222, 222, 222);
   transition: transform 0.7s ease;
+  border-radius: 15px;
 }
 
 .portrait:hover {
@@ -445,8 +458,6 @@ h3 {
 .main-role {
   width: 30%;
 }
-
-
 
 .second-roles {
   display: flex;
@@ -483,42 +494,115 @@ h3 {
   height: 320px;
 }
 
+/* faq */
+
+.article_text a {
+  text-decoration: none;
+  color: red;
+}
+
+.article_text details {
+  max-width: 65vw;
+}
+
+.faq .article_text {
+  padding: 70px;
+}
+
+details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Отступ между маркером и текстом */
+  cursor: pointer;
+  padding: 10px;
+  width: 70vw;
+}
+
+/* Создаем кастомный маркер */
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Анимация при открытии */
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+
 /* feedback */
 
+.feedback h2 {
+  margin-bottom: 0px;
+}
+
 .chat {
-  width: 335px;
-  height: 335px;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
-  margin: 19px;
+  margin-right: 20px;
+  transition: transform 0.7s ease;
+}
+
+.chat:hover {
+  transform: scale(1.05);
 }
 
 .form {
-  width: 375px;
-  height: 375px;
+  width: 325px;
+  height: 325px;
+  transition: transform 0.7s ease;
+}
+
+.form:hover {
+  transform: scale(1.05);
 }
 
 .container-feedback {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 17vh;
+  /* width: 100vw; */
 }
 
-.container-feedback-item {
+.container-feedback-item-1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48vw;
   height: 250px;
 }
 
-.container-feedback-item figure {
+.container-feedback-item-2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  height: 250px;
 }
 
-.container-feedback-item figcaption {
+.container-feedback-item-1 figure {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-feedback-item-1 figcaption {
+  width: 600px;
+  text-align: center;
+  background: linear-gradient(to left, rgb(251, 183, 24) 33%, rgb(243, 130, 38) 52%, rgb(170, 246, 52) 99%);
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 5px;
+  font-weight: bold;
+  border: 3px solid white;
+  color: white;
+}
+
+.container-feedback-item-2 figure {
+  display: flex;
+  align-items: flex-end;
+}
+
+.container-feedback-item-2 figcaption {
   width: 600px;
   text-align: center;
   background: linear-gradient(to left, rgb(251, 183, 24) 33%, rgb(243, 130, 38) 52%, rgb(170, 246, 52) 99%);
